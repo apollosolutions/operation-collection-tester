@@ -1,0 +1,41 @@
+{
+  "name": "operation-collection-tester",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "author": "lucas@apollographql.com",
+  "license": "MIT",
+  "type": "commonjs",
+  "repository": "https://github.com/apollosolutions/operation-collection-tester",
+  "engines": {
+    "node": ">=16"
+  },
+  "bin": "bin/index.js",
+  "scripts": {
+    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "build": "npx tsc",
+    "prestart": "npx tsc",
+    "start": "node bin/index.js",
+    "codegen": "graphql-codegen --config codegen.yml"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "2.8.1",
+    "@graphql-codegen/typed-document-node": "^2.3.1",
+    "@graphql-codegen/typescript": "2.7.1",
+    "@graphql-codegen/typescript-document-nodes": "2.3.1",
+    "@graphql-codegen/typescript-operations": "^2.5.1",
+    "@graphql-codegen/typescript-resolvers": "2.7.1",
+    "@types/inquirer": "^8.2.1",
+    "@types/make-fetch-happen": "^9.0.2",
+    "@types/node": "^18.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@urql/core": "^2.6.0",
+    "clipanion": "^3.2.0-rc.11",
+    "graphql": "^16.5.0",
+    "inquirer": "^9.0.1",
+    "make-fetch-happen": "^10.1.8"
+  }
+}

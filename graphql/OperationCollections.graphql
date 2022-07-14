@@ -1,0 +1,22 @@
+query OperationCollections($graphRef: ID!) {
+    variant(ref: $graphRef) {
+        ... on GraphVariant {
+        id
+        name
+        operationCollections {
+            name
+            operations {
+            name
+            currentOperationRevision {
+                body
+                variables
+                headers {
+                name
+                value
+                }
+            }
+            }      
+        }
+        }
+    }
+}
