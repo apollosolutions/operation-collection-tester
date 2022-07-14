@@ -1,1 +1,1 @@
-export { default as TestCommand } from "./test";
+export { default as TestCommand } from './test';

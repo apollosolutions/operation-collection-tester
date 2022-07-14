@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 var __awaiter =
   (this && this.__awaiter) ||
   function (thisArg, _arguments, P, generator) {
@@ -19,7 +19,7 @@ var __awaiter =
       }
       function rejected(value) {
         try {
-          step(generator["throw"](value));
+          step(generator['throw'](value));
         } catch (e) {
           reject(e);
         }
@@ -32,14 +32,14 @@ var __awaiter =
       step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
   };
-Object.defineProperty(exports, "__esModule", { value: true });
-const clipanion_1 = require("clipanion");
+Object.defineProperty(exports, '__esModule', { value: true });
+const clipanion_1 = require('clipanion');
 class DefaultCommand extends clipanion_1.Command {
   constructor() {
     super(...arguments);
-    this.graphRef = clipanion_1.Option.String("--graphref", { required: true });
-    this.endpoint = clipanion_1.Option.String("--endpoint", { required: true });
-    this.apiKey = clipanion_1.Option.String("--key", {
+    this.graphRef = clipanion_1.Option.String('--graphref', { required: true });
+    this.endpoint = clipanion_1.Option.String('--endpoint', { required: true });
+    this.apiKey = clipanion_1.Option.String('--key', {
       required: false,
       hidden: true,
     });
@@ -50,7 +50,7 @@ class DefaultCommand extends clipanion_1.Command {
         JSON.stringify({
           graphref: this.graphRef,
           endpoint: this.endpoint,
-        }) + "\n"
+        }) + '\n',
       );
       return 0;
     });

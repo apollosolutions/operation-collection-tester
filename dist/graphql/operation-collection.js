@@ -1,7 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+'use strict';
+Object.defineProperty(exports, '__esModule', { value: true });
 exports.FETCH_OPERATIONS_COLLECTION = void 0;
-const core_1 = require("@urql/core");
+const core_1 = require('@urql/core');
 exports.FETCH_OPERATIONS_COLLECTION = (0, core_1.gql)`
     query OperationCollections($graphRef: ID!) {
     variant(ref: $graphRef) {
