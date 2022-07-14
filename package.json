@@ -1,5 +1,5 @@
 {
-  "name": "operation-collection-tester",
+  "name": "@apollosolutions/operation-collection-tester",
   "version": "0.0.1",
   "main": "dist/index.js",
   "author": "lucas@apollographql.com",
