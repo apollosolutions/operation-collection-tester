@@ -45,8 +45,7 @@
   "dependencies": {
     "clipanion": "^3.2.0-rc.11",
     "graphql": "^16.5.0",
-    "graphql-request": "^4.3.0",
-    "inquirer": "^9.0.1"
+    "graphql-request": "^4.3.0"
   },
   "prettier": {
     "singleQuote": true,
