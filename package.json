@@ -13,7 +13,7 @@
   "scripts": {
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "build": "npx tsc",
+    "deploy": "npx tsc",
     "prestart": "npx tsc",
     "start": "node bin/index.js",
     "codegen": "graphql-codegen --config codegen.yml"
